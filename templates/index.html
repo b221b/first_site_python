@@ -8,12 +8,7 @@
 
 <head>
 	<title>Phantom by HTML5 UP</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../static/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="../static/css/noscript.css" />
-	</noscript>
+	{% include 'includes/head.html' %}
 </head>
 
 <body class="is-preload">
@@ -21,38 +16,9 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header">
-			<div class="inner">
+		{% include 'includes/header.html' %}
 
-				<!-- Logo -->
-				<a href="index.html" class="logo">
-					<span class="symbol"><img src="../static/images/logo.svg" alt="" /></span><span
-						class="title">Phantom</span>
-				</a>
-
-				<!-- Nav -->
-				<nav>
-					<ul>
-						<li><a href="#menu">Menu</a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</header>
-
-		<!-- Menu -->
-		<!-- <nav id="menu">
-			<h2>Menu</h2>
-			<ul>
-				<li><a href="/">Главная</a></li>
-				<li><a href="/contact">Контакты</a></li>
-				<li><a href="/about">О нас</a></li>
-				<li><a href="/generic">Generic</a></li>
-				<li><a href="/elements">Elements</a></li>
-			</ul>
-		</nav> -->
-
-		{% include 'includes/nav.html' %}
+		{% include 'includes/burger_menu.html' %}
 
 		<!-- Main -->
 		<div id="main">
@@ -69,7 +35,7 @@
 						<span class="image">
 							<img src="../static/images/pic01.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Magna</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -80,7 +46,7 @@
 						<span class="image">
 							<img src="../static/images/pic02.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Lorem</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -91,7 +57,7 @@
 						<span class="image">
 							<img src="../static/images/pic03.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Feugiat</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -102,7 +68,7 @@
 						<span class="image">
 							<img src="../static/images/pic04.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Tempus</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -113,7 +79,7 @@
 						<span class="image">
 							<img src="../static/images/pic05.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Aliquam</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -124,7 +90,7 @@
 						<span class="image">
 							<img src="../static/images/pic06.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Veroeros</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -135,7 +101,7 @@
 						<span class="image">
 							<img src="../static/images/pic07.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Ipsum</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -146,7 +112,7 @@
 						<span class="image">
 							<img src="../static/images/pic08.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Dolor</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -157,7 +123,7 @@
 						<span class="image">
 							<img src="../static/images/pic09.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Nullam</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -168,7 +134,7 @@
 						<span class="image">
 							<img src="../static/images/pic10.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Ultricies</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -179,7 +145,7 @@
 						<span class="image">
 							<img src="../static/images/pic11.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Dictum</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -190,7 +156,7 @@
 						<span class="image">
 							<img src="../static/images/pic12.jpg" alt="" />
 						</span>
-						<a href="generic.html">
+						<a href="{{ url_for('generic') }}">
 							<h2>Pretium</h2>
 							<div class="content">
 								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
@@ -250,11 +216,8 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="../static/js/jquery.min.js"></script>
-	<script src="../static/js/browser.min.js"></script>
-	<script src="../static/js/breakpoints.min.js"></script>
-	<script src="../static/js/util.js"></script>
-	<script src="../static/js/main.js"></script>
+	{% include 'includes/scripts.html' %}
+
 
 </body>
 

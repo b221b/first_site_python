@@ -3,16 +3,29 @@
 
 <head>
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% include 'includes/head.html' %}
 </head>
 
-<body>
-    {% include 'includes/nav.html' %}
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Header -->
+        {% include 'includes/header.html' %}
 
+        <!-- Menu -->
+        {% include 'includes/burger_menu.html' %}
 
-    <h1>О нашем сайте</h1>
-    <p>Это учебный проект для изучения веб-разработки на Python.</p>
-    <p>Мы используем Flask - микрофреймворк для веб-приложений.</p>
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <h1>О нашем сайте</h1>
+                <p>Это учебный проект для изучения веб-разработки на Python.</p>
+                <p>Мы используем Flask - микрофреймворк для веб-приложений.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Scripts -->
+    {% include 'includes/scripts.html'%}
 </body>
 
 </html>

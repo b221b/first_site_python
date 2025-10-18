@@ -8,12 +8,7 @@
 
 <head>
 	<title>Elements - Phantom by HTML5 UP</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../static/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="../static/css/noscript.css" />
-	</noscript>
+	{% include 'includes/head.html' %}
 </head>
 
 <body class="is-preload">
@@ -21,28 +16,10 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-
-				<!-- Logo -->
-				<a href="index.html" class="logo">
-					<span class="symbol"><img src="../static/images/logo.svg" alt="" /></span><span
-						class="title">Phantom</span>
-				</a>
-
-				<!-- Nav -->
-				<nav>
-					<ul>
-						<li><a href="#menu">Menu</a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</header>
+		{% include 'includes/header.html' %}
 
 		<!-- Menu -->
-		{% include 'includes/nav.html' %}
-
+		{% include 'includes/burger_menu.html' %}
 
 		<!-- Main -->
 		<div id="main">
@@ -56,7 +33,8 @@
 						<em>emphasized</em>.
 						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
-							href="#">this is a link</a>.</p>
+							href="#">this is a link</a>.
+					</p>
 					<hr />
 					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer
 						non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
@@ -463,11 +441,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</div>
 
 	<!-- Scripts -->
-	<script src="../static/js/jquery.min.js"></script>
-	<script src="../static/js/browser.min.js"></script>
-	<script src="../static/js/breakpoints.min.js"></script>
-	<script src="../static/js/util.js"></script>
-	<script src="../static/js/main.js"></script>
+	{% include 'includes/scripts.html' %}
+
 
 </body>
 
